@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(bg.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    padding: 2rem 4%;
+    text-align: left;
+    z-index: 10000;
+    position: relative;
+}
+
+.logo svg{
+    fill: red;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -130px;
+}
+
+
+.overlay{
+    background-color: black;
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    opacity: 50%;
+}
+
+.loginForms{
+    position: relative;
+    z-index: 10000;
+    width: 450px;
+}
+
+.loginForms .content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10000;
+    width: 100%;
+    padding: 50px 40px;
+}
+
+.loginForms h3{
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+
+.loginForms .overlay{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 70%;
+}
+
+
+.loginForms form input{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 20px 8px;
+    background-color: #333333;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.loginForms button{
+    width: 100%;
+    padding: 17px;
+    background-color: #e50914;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+}
+
+.rememberMe{
+    margin-top: 10px;
+}
+
+.rememberMe ul{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    flex-direction: row;
+    list-style: none;
+}
+
+.rememberMe ul li input{
+    margin-right: 5px;
+}
+
+.rememberMe ul li{
+    display: flex;
+    font-size: 16px;
+    color: #a2b38b;
+}
+
+.new{
+    margin-top: 60px;
+}
+
+.new h5{
+    color:#a2b38b ;
+    font-weight: 200;
+}
+
+.new a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.new p{
+    color: #a2b38b;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.new p a{
+    font-size: 13px;
+    color: blue;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+}
+
+.text a{
+    margin-left: 5px;
+}
+
+
+@media (max-width:480px) {
+    
+body{
+    height: 700px;
+}
+
+.overlay{
+    height: 700px;
+}
+
+}
